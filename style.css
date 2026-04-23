@@ -39,11 +39,9 @@ html {
 }
 
   .intro-projects {
-  display: flex;
-  flex-wrap: wrap;       
-  justify-content: center;
-  align-items: stretch;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
 .intro-projects img {
