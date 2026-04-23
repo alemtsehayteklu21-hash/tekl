@@ -69,9 +69,14 @@ html {
     body {
       font-family: Areal, sans-serif;
       line-height: 1.6;
-      background:lab(53.07% 34.55 51.53 / 0.295);
+      background: rgba (53.07% 34.55 51.53 / 0.295);
       color: #402e5c;
     }
+      img {
+  max-width: 100%;
+  height: auto;
+}
+
 
     a {
       text-decoration: none;
@@ -99,6 +104,7 @@ html {
       margin: 0 15px;
       font-weight: bold;
       font-size: 1rem;
+      
     }
 
     nav a:hover {
@@ -169,9 +175,9 @@ html {
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .project-card img {
-      width:80%;
-      border-radius: 6px;
+.project-card img {
+  width: 100%;
+  height: auto;
     }
 
     .project-card h3 {
@@ -180,8 +186,8 @@ html {
     }
 
     .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
       .box {
   width: 300px;
   margin: 0 auto;
@@ -242,5 +248,31 @@ html {
         flex-direction: column;
         gap: 10px;
       }
+      @media (max-width: 768px) {
+  .intro-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+}
     }
   
