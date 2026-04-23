@@ -183,9 +183,10 @@ html {
     }
 
     .project-card h3 {
-      margin-top: 10px;
-      font-size: 1.1rem;
-    }
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 10px 0;
+}
 
     .project-card:hover {
   transform: translateY(-5px);
