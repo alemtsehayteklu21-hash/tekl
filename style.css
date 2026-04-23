@@ -40,7 +40,7 @@ html {
 
   .intro-projects {
   display: flex;
-  flex-wrap: wrap;        /* ADD THIS */
+  flex-wrap: wrap;       
   justify-content: center;
   align-items: stretch;
   gap: 20px;
